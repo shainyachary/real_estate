@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- remix-icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- swiper css file -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- js file -->
+    <script src="js/app.js" defer></script>
+
+    <title>Houzeo | Perfect place for your dream homes</title>
+  </head>
+  <body>
+    <!-- nav code starts -->
+    <nav>
+      <div class="nav__logo">
+        <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+      </div>
+      <div class="filter__container">
+        <div class="nav__header">
+          <div class="input__box">
+            <input type="text" placeholder="Austin, TX" />
+            <div class="input__icons">
+              <i class="ri-close-line close"></i>
+              <i class="ri-search-line search"></i>
+            </div>
+          </div>
+          <div class="input__box filter">
+            <i class="ri-equalizer-line"></i>
+            <span class="count">2</span>
+          </div>
+        </div>
+        <div class="nav__header">
+          <div class="input__box select">
+            <select>
+              <option value="For Sale">For Sale</option>
+              <option value="Sold">Sold</option>
+            </select>
+          </div>
+          <div class="input__box select">
+            <select>
+              <option value="Price">Price</option>
+            </select>
+          </div>
+          <div class="input__box saved">
+            <button>
+              <i class="ri-pencil-line"></i>
+              <span>Saved</span>
+            </button>
+          </div>
+          <div class="input__box save">
+            <button>
+              <span>Save Search</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav code ends -->
+
+    <!-- main section starts -->
+    <main>
+      <section id="googleMap"></section>
+      <section class="content">
+        <h3 class="header__title">Austin, TX real estate & homes for sale</h3>
+        <div class="sub__header">
+          <p>2,010 Homes</p>
+          <div class="listing">
+            <p>Sort by:</p>
+            <select>
+              <option value="New Listing">New Listing</option>
+              <option value="Price">Price</option>
+            </select>
+          </div>
+        </div>
+        <div class="image__container">
+          <div class="card">
+            <div class="swiper mySwiper">
+              <div class="img__card swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_1_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">6 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_2_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">6 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_3_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">6 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_4_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">6 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_5_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">6 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="prev-btn"><i class="ri-arrow-left-s-line"></i></div>
+              <div class="next-btn"><i class="ri-arrow-right-s-line"></i></div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="content__sale">
+                  <div class="circle"></div>
+                  <span class="sale">House For Sale</span>
+                </div>
+                <div class="content__view">
+                  <i class="ri-eye-line icon"></i>
+                  <span class="views">2.3K</span>
+                </div>
+              </div>
+              <div class="content__details">
+                <div class="price">$3,349,000</div>
+                <div class="room__desc">
+                  <div class="desc__col">
+                    <span class="blue">4</span>
+                    <span>Beds</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">3</span>
+                    <span>Baths</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">998</span>
+                    <span>sqft.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="content__add">
+                <span class="add">2856 Meadow Park Ave,</span> Henderson, NV
+                89052
+              </div>
+              <div class="content__info">
+                Nashville (Real Tracs Mid) MLS-TN as distributed by MLS GRID
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="swiper mySwiper">
+              <div class="img__card swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_2_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">12 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_2_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">12 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_3_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">12 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_4_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">12 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_5_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">12 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="prev-btn"><i class="ri-arrow-left-s-line"></i></div>
+              <div class="next-btn"><i class="ri-arrow-right-s-line"></i></div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="content__sale">
+                  <div class="circle"></div>
+                  <span class="sale">Condo For Sale</span>
+                </div>
+                <div class="content__view">
+                  <i class="ri-eye-line icon"></i>
+                  <span class="views">2.3K</span>
+                </div>
+              </div>
+              <div class="content__details">
+                <div class="price">$3,349,000</div>
+                <div class="room__desc">
+                  <div class="desc__col">
+                    <span class="blue">4</span>
+                    <span>Beds</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">3</span>
+                    <span>Baths</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">998</span>
+                    <span>sqft.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="content__add">
+                <span class="add">2856 Meadow Park Ave,</span> Henderson, NV
+                89052
+              </div>
+              <div class="content__info">Sotheby's International Realty</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="swiper mySwiper">
+              <div class="img__card swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_2_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_2_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_3_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_4_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_5_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="prev-btn"><i class="ri-arrow-left-s-line"></i></div>
+              <div class="next-btn"><i class="ri-arrow-right-s-line"></i></div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="content__sale">
+                  <div class="circle"></div>
+                  <span class="sale">Multi-family home For Sale</span>
+                </div>
+                <div class="content__view">
+                  <i class="ri-eye-line icon"></i>
+                  <span class="views">2.3K</span>
+                </div>
+              </div>
+              <div class="content__details">
+                <div class="price">$3,349,000</div>
+                <div class="room__desc">
+                  <div class="desc__col">
+                    <span class="blue">4</span>
+                    <span>Beds</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">3</span>
+                    <span>Baths</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">998</span>
+                    <span>sqft.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="content__add">
+                <span class="add">2856 Meadow Park Ave,</span> Henderson, NV
+                89052
+              </div>
+              <div class="content__info">
+                Nashville (Real Tracs Mid) MLS-TN as distributed by MLS GRID
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="swiper mySwiper">
+              <div class="img__card swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_4_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">10 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_2_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">10 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_3_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">10 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_4_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">10 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_5_1.png"
+                    alt="home"
+                  />
+                  <div class="position days">10 days on Houzeo</div>
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="prev-btn"><i class="ri-arrow-left-s-line"></i></div>
+              <div class="next-btn"><i class="ri-arrow-right-s-line"></i></div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="content__sale">
+                  <div class="circle"></div>
+                  <span class="sale">House For Sale</span>
+                </div>
+                <div class="content__view">
+                  <i class="ri-eye-line icon"></i>
+                  <span class="views">2.3K</span>
+                </div>
+              </div>
+              <div class="content__details">
+                <div class="price">$3,349,000</div>
+                <div class="room__desc">
+                  <div class="desc__col">
+                    <span class="blue">4</span>
+                    <span>Beds</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">3</span>
+                    <span>Baths</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">998</span>
+                    <span>sqft.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="content__add">
+                <span class="add">2856 Meadow Park Ave,</span> Henderson, NV
+                89052
+              </div>
+              <div class="content__info">
+                Nashville (Real Tracs Mid) MLS-TN as distributed by MLS GRID
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="swiper mySwiper">
+              <div class="img__card swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_4_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_2_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_3_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_4_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_5_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="prev-btn"><i class="ri-arrow-left-s-line"></i></div>
+              <div class="next-btn"><i class="ri-arrow-right-s-line"></i></div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="content__sale">
+                  <div class="circle"></div>
+                  <span class="sale">Townhouse For Sale</span>
+                </div>
+                <div class="content__view">
+                  <i class="ri-eye-line icon"></i>
+                  <span class="views">2.3K</span>
+                </div>
+              </div>
+              <div class="content__details">
+                <div class="price">$3,349,000</div>
+                <div class="room__desc">
+                  <div class="desc__col">
+                    <span class="blue">4</span>
+                    <span>Beds</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">3</span>
+                    <span>Baths</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">998</span>
+                    <span>sqft.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="content__add">
+                <span class="add">2856 Meadow Park Ave,</span> Henderson, NV
+                89052
+              </div>
+              <div class="content__info">
+                Nashville (Real Tracs Mid) MLS-TN as distributed by MLS GRID
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="swiper mySwiper">
+              <div class="img__card swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_6_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_2_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_3_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_4_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    loading="lazy"
+                    src="assets/home_card_5_1.png"
+                    alt="home"
+                  />
+
+                  <div class="position heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                  <div class="position overlay">
+                    <img src="assets/image_overlay.png" alt="overlay" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="prev-btn"><i class="ri-arrow-left-s-line"></i></div>
+              <div class="next-btn"><i class="ri-arrow-right-s-line"></i></div>
+            </div>
+            <div class="card__content">
+              <div class="content__header">
+                <div class="content__sale">
+                  <div class="circle"></div>
+                  <span class="sale">Condo For Sale</span>
+                </div>
+                <div class="content__view">
+                  <i class="ri-eye-line icon"></i>
+                  <span class="views">2.3K</span>
+                </div>
+              </div>
+              <div class="content__details">
+                <div class="price">$3,349,000</div>
+                <div class="room__desc">
+                  <div class="desc__col">
+                    <span class="blue">4</span>
+                    <span>Beds</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">3</span>
+                    <span>Baths</span>
+                  </div>
+                  <div class="desc__col">
+                    <span class="blue">998</span>
+                    <span>sqft.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="content__add">
+                <span class="add">2856 Meadow Park Ave,</span> Henderson, NV
+                89052
+              </div>
+              <div class="content__info">
+                Nashville (Real Tracs Mid) MLS-TN as distributed by MLS GRID
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>Copyright: @2024 Houzeo. All rights reserved.</p>
+        </footer>
+      </section>
+    </main>
+    <div class="map__absolute">
+      <button class="btn fixed__map">
+        Map <span><i class="ri-map-2-line"></i></span>
+      </button>
+    </div>
+
+    <div class="map__modal" id="mapModal">
+      <span class="close__modal">&times;</span>
+      <div class="modal__content">
+        <div id="mobileMap" style="width: 100%; height: 100%"></div>
+      </div>
+    </div>
+    <!-- main section ends -->
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdwuDJIj8fwJ-O3lW4tw5CYoCa1TcuQ1o&callback=initMap"
+    ></script>
+  </body>
+</html>
