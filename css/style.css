@@ -401,7 +401,7 @@ main {
   margin-bottom: 0.3em;
 }
 .my-bullet {
-  display: inline-flex;
+  display: none;
   width: 6px;
   height: 6px;
   background-color: #f1f1f1;
@@ -412,6 +412,9 @@ main {
 }
 .my-bullet-active {
   background-color: #007bff;
+}
+.card:hover .my-bullet {
+  display: inline-flex;
 }
 .next-btn,
 .prev-btn {
