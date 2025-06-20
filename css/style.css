@@ -169,6 +169,9 @@ nav {
     grid-template-columns: 3fr 0.2fr;
     gap: 0.5em;
   }
+  .nav__header .input__box .input__icons {
+    margin-left: auto;
+  }
   .input__box.filter {
     display: block;
     position: relative;
@@ -286,12 +289,8 @@ main {
 .heart {
   right: 0.6em;
   top: 0.6em;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+}
+.heart i {
   color: var(--white);
 }
 .heart i:hover {
